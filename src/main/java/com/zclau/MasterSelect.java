@@ -1,6 +1,5 @@
 package com.zclau;
 
-import com.zclau.server.TestingServer;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.leader.LeaderSelector;
 import org.apache.curator.framework.recipes.leader.LeaderSelectorListenerAdapter;

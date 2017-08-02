@@ -1,6 +1,5 @@
 package com.zclau;
 
-import com.zclau.server.TestingServer;
 import org.apache.curator.framework.recipes.atomic.AtomicValue;
 import org.apache.curator.framework.recipes.atomic.DistributedAtomicInteger;
 import org.apache.curator.retry.RetryNTimes;

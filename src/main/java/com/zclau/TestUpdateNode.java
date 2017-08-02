@@ -1,6 +1,5 @@
 package com.zclau;
 
-import com.zclau.server.TestingServer;
 import org.apache.zookeeper.data.Stat;
 
 /**

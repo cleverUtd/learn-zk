@@ -1,6 +1,5 @@
 package com.zclau;
 
-import com.zclau.server.TestingServer;
 import org.apache.zookeeper.CreateMode;
 
 import java.util.concurrent.CountDownLatch;

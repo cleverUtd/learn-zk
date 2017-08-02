@@ -1,4 +1,4 @@
-package com.zclau.server;
+package com.zclau;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
@@ -77,5 +77,5 @@ public abstract class TestingServer {
         shutdownServer();
     }
 
-    abstract void doTest() throws Exception;
+     abstract void doTest() throws Exception;
 }
