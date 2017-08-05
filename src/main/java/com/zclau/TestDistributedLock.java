@@ -9,7 +9,7 @@ import java.util.concurrent.CountDownLatch;
 /**
  * Created by liuzicong on 2/8/2017.
  */
-public class TestLock extends TestingServer {
+public class TestDistributedLock extends TestingServer {
 
     static String lock_path = "/lock_path";
 
@@ -30,7 +30,9 @@ public class TestLock extends TestingServer {
                 SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss|SSS");
                 String orderNo = sdf.format(new Date());
                 System.out.println("生成的订单号是：" + orderNo);
+
                 try {
+                    lock.getParticipantNodes().forEach(s -> System.out.println(s));
                     lock.release();
                     endLatch.countDown();
                 } catch (Exception e) {
@@ -44,6 +46,6 @@ public class TestLock extends TestingServer {
     }
 
     public static void main(String[] args) throws Exception {
-        new TestLock().createTest();
+        new TestDistributedLock().createTest();
     }
 }

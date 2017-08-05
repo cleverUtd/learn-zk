@@ -10,10 +10,11 @@ public class TestCreateNode extends TestingServer {
 
     @Override
     void doTest() throws Exception {
-        client.create()
+        String p = client.create()
                         .creatingParentsIfNeeded()
                         .withMode(CreateMode.EPHEMERAL)
                         .forPath(path, "init".getBytes());
+        System.out.println(p);
     }
 
 
